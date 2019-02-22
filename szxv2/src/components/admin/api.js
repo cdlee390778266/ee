@@ -133,10 +133,10 @@ class Api extends Component {
   render() {
     return (
       <div>
-        <div className="borderShadow">
+        <div>
           <Tabs defaultActiveKey="1" className="lh60 fs14 bold szx-tabs">
             <Tabs.TabPane tab="全部" key="1">
-              <Row className="p20">
+              <Row className="p20 bgfff b bt0">
                 <Col span={16}>
                   <span className="mr20">提供方式</span>
                   <Select defaultValue="lucy" style={{ width: 160 }}>
@@ -161,9 +161,13 @@ class Api extends Component {
                   />
                 </Col>
               </Row>
+
+              <div className="borderShadow mt20">
+                <Table rowSelection={rowSelection} columns={this.state.columns} dataSource={this.state.data} pagination={{size: 'small'}} className="szx-ant-table-pagination" />
+              </div>
             </Tabs.TabPane>
               <Tabs.TabPane tab="可使用" key="2">
-                <Row className="p20">
+                <Row className="p20 bgfff b bt0">
                   <Col span={16}>
                     <Button>续费</Button>
                     <span className="mlr20">提供方式</span>
@@ -184,7 +188,7 @@ class Api extends Component {
                 </Row>
               </Tabs.TabPane>
               <Tabs.TabPane tab="快到期" key="3">
-                <Row className="p20">
+                <Row className="p20 bgfff b bt0">
                   <Col span={16}>
                     <Button>续费</Button>
                     <span className="mlr20">提供方式</span>
@@ -205,7 +209,7 @@ class Api extends Component {
                 </Row>
               </Tabs.TabPane>
               <Tabs.TabPane tab="已过期" key="4">
-                <Row className="p20">
+                <Row className="p20 bgfff b bt0">
                   <Col span={16}>
                     <Button>重新购买</Button>
                     <span className="mlr20">提供方式</span>
@@ -226,7 +230,7 @@ class Api extends Component {
                 </Row>
               </Tabs.TabPane>
               <Tabs.TabPane tab="赞过的API" key="5">
-                <Row className="p20">
+                <Row className="p20 bgfff b bt0">
                   <Col span={16}>
                     <span className="mlr20">提供方式</span>
                     <Select defaultValue="lucy" style={{ width: 160 }}>
@@ -246,9 +250,6 @@ class Api extends Component {
                 </Row>
               </Tabs.TabPane>
             </Tabs>
-        </div>
-        <div className="borderShadow mt20">
-          <Table rowSelection={rowSelection} columns={this.state.columns} dataSource={this.state.data} pagination={{size: 'small'}} className="szx-ant-table-pagination" />
         </div>
       </div>
     );

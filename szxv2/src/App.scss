@@ -22,6 +22,13 @@ $cfefdf6: #fefdf6;
 $cdc9d16: #dc9d16;
 $cfcf4ea: #fcf4ea;
 $ceee: #eeeeee;
+$cdb4858: #db4858;
+$cea2727: #ea2727;
+$ce4bc18: #e4bc18;
+$cba8513: #ba8513;
+$cc6dff8: #c6dff8;
+$cfab256: #fab256;
+$ce61c1c: #e61c1c;
 /*----------变量 End---------------*/
 body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
 body{color: #333; font-size: 13px;}
@@ -1002,6 +1009,27 @@ body {
 .fcdc9d16 {
     color: $cdc9d16;
 }
+.fcdb4858 {
+    color: $cdb4858;
+}
+.fcea2727 {
+    color: $cea2727;
+}
+.fce4bc18 {
+    color: $ce4bc18;
+}
+.fcba8513 {
+    color: $cba8513;
+}
+.fcc6dff8 {
+    color: $cc6dff8;
+}
+.fcfab256 {
+    color: $cfab256;
+}
+.fce61c1c {
+    color: $ce61c1c;
+}
 .fl {
     float: left;
 }
@@ -1025,6 +1053,9 @@ body {
 }
 .fs24 {
     font-size: 24px;
+}
+.fs30 {
+    font-size: 30px;
 }
 .lh20 {
     line-height: 20px;
@@ -1055,6 +1086,9 @@ body {
 }
 .bfcf4ea {
     border: 1px solid $cfcf4ea;
+}
+.bt0 {
+    border-top: none !important;
 }
 .bt {
     border-top: 1px solid $borderColor;
@@ -1116,7 +1150,6 @@ body {
 }
 .adminRight {
     width: 905px;
-    height: 100px;
     float: right;
 }
 .adminMenu {
@@ -1350,7 +1383,10 @@ body {
 }
 .szx-tabs {
     .ant-tabs-bar {
+        border: 1px solid $borderColor;
         border-bottom: 1px solid $cb1c9e2;
+        background: $cfff;
+        margin-bottom: 0;
     }
     .ant-tabs-nav .ant-tabs-tab-active {
         color: $c004ea1;
@@ -1375,4 +1411,73 @@ body {
 }
 .fc004ea1 span {
     color: $c004ea1;
+}
+.szx-tab {
+    span {
+        cursor: pointer;
+        line-height: 32px;
+        margin: 0 10px;
+        padding: 2px 5px;
+        &.active {
+            border-bottom: 2px solid $c004ea1;
+        }
+    }
+}
+.step {
+    position: relative;
+    &:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #e3ecf5;
+        position: absolute;
+        top: 55px;
+    }
+    .step-item {
+        position: relative;
+        &:last-child:before {
+            content: '';
+            display: block;
+            width: 50%;
+            height: 1px;
+            background: #fff;
+            position: absolute;
+            top: 55px;
+            right: 0;
+        }
+        &:first-child:before {
+            content: '';
+            display: block;
+            width: 50%;
+            height: 1px;
+            background: #fff;
+            position: absolute;
+            top: 55px;
+            left: 0;
+        }
+        & > div {
+            width: 110px;
+            height: 110px;
+            line-height: 110px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            color: $c004ea1;
+            background: #fff;
+            border: 1px solid #8fb2d6;
+            border-radius: 100%;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 2;
+        }
+        p {
+            width: 160px;
+            color: $c666;
+            line-height: 30px;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
 }

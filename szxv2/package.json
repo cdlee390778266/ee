@@ -4,7 +4,9 @@
   "private": true,
   "dependencies": {
     "babel-plugin-import": "^1.11.0",
+    "chart.js": "^2.7.3",
     "customize-cra": "^0.2.11",
+    "echarts": "^4.1.0",
     "react": "^16.7.0",
     "react-app-rewired": "^2.0.2",
     "react-dom": "^16.7.0",

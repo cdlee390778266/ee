@@ -23,7 +23,7 @@ class Cart extends Component {
       this.handleClick = this.handleClick.bind(this);
       this.state = {
         name:'Hello world!',
-        isShowDelPwdModal: false,
+        isShowBuyModal: false,
       };
   }
 
@@ -31,7 +31,7 @@ class Cart extends Component {
     console.log('this is:', this);
   }
 
-  setdelModalVisible(isShowDelPwdModal) {
+  setBuyModalVisible(isShowDelPwdModal) {
     this.setState({ isShowDelPwdModal });
   }
 
@@ -54,187 +54,114 @@ class Cart extends Component {
     return (
       <div className="wrapper">
         <div className="borderShadow mt20 cProduct fs12 fc333">
-          <div className="p10">
-            <Breadcrumb>
-              <Breadcrumb.Item><NavLink to="/admin/cart">我的购物车</NavLink></Breadcrumb.Item>
-              <Breadcrumb.Item>订单确认</Breadcrumb.Item>
-            </Breadcrumb>
+          <div className="p10 fs14 fc333">
+            <NavLink to="/admin/cart" className="fc333">我的购物车</NavLink> <i>></i><span> 订单确认</span>
           </div>
-          <Row className="p10 fs14 bb bgf7f9fc bbb1c9e2">
-            <Col span={4}>
-              <Checkbox className="fc004ea1 bold">API接口名称1</Checkbox>
-              <Icon type="close-circle" className="fc999" />
-            </Col>
-            <Col span={20} className="tr">
-              (已选<span className="fc337ac4">2</span>个API接口) <Icon type="down" className="ml20 mr10 fc337ac4" />
-            </Col>
-          </Row>
-          <Row className="ptb20 plr10 bb">
-            <Col span={4}>
-              <Checkbox >API接口名称1</Checkbox>
-            </Col>
-            <Col span={3}>
-              <Checkbox >时长</Checkbox>
-            </Col>
-            <Col span={4}>
-              <Select defaultValue="lucy">
-                <Select.Option value="jack">Jack</Select.Option>
-                <Select.Option value="lucy">近一个月</Select.Option>
-                <Select.Option value="disabled" disabled>Disabled</Select.Option>
-                <Select.Option value="Yiminghe">yiminghe</Select.Option>
-              </Select>
-            </Col>
-            <Col span={3}>
-              ￥9.0深币/次
-            </Col>
-            <Col span={5}>
-              <span className="numberHandle">
-                <strong><img src={Add} className="mr10" /></strong>
-                <Input style={{ width: 80 }} />
-                <strong><img src={Reduce} className="ml10" /></strong>
-                <span className="fc333 fs12 ml10">月</span>
-              </span>
-            </Col>
-            <Col span={3} className="fcebc014 bold">
-              ￥9.0深币
-            </Col>
-            <Col span={2}>
-              <Button onClick={() => this.setdelModalVisible(true)}>删除</Button>
-            </Col>
-          </Row>
-          <Row className="ptb20 plr10">
-            <Col span={4}>
-              <Checkbox >API接口名称1</Checkbox>
-            </Col>
-            <Col span={3}>
-              <Checkbox >时长</Checkbox>
-            </Col>
-            <Col span={4}>
-              <Select defaultValue="lucy">
-                <Select.Option value="jack">Jack</Select.Option>
-                <Select.Option value="lucy">近一个月</Select.Option>
-                <Select.Option value="disabled" disabled>Disabled</Select.Option>
-                <Select.Option value="Yiminghe">yiminghe</Select.Option>
-              </Select>
-            </Col>
-            <Col span={3}>
-              ￥9.0深币/次
-            </Col>
-            <Col span={5}>
-              <span className="numberHandle">
-                <strong><img src={Add} className="mr10" /></strong>
-                <Input style={{ width: 80 }} />
-                <strong><img src={Reduce} className="ml10" /></strong>
-                <span className="fc333 fs12 ml10">月</span>
-              </span>
-            </Col>
-            <Col span={3} className="fcebc014 bold">
-              ￥9.0深币
-            </Col>
-            <Col span={2}>
-              <Button>删除</Button>
-            </Col>
-          </Row>
+          <div>
+            <Row className="p10 fs14 bb bgf7f9fc bbb1c9e2">
+              <Col span={24}>
+                <Checkbox className="bold">API接口名称1</Checkbox>
+              </Col>
+            </Row>
+            <Row className="ptb20 plr10 bb">
+              <Col span={4}>
+                <Checkbox >API接口名称1</Checkbox>
+              </Col>
+              <Col span={4}>
+                ￥9.0深币/次
+              </Col>
+              <Col span={4}>
+                ￥9.0深币/次
+              </Col>
+              <Col span={8}>
+                ￥9.0深币/次
+              </Col>
+              <Col span={4} className="fcebc014 bold">
+                ￥9.0深币
+              </Col>
+            </Row>
+            <Row className="ptb20 plr10">
+              <Col span={4}>
+                <Checkbox >API接口名称1</Checkbox>
+              </Col>
+              <Col span={4}>
+                ￥9.0深币/次
+              </Col>
+              <Col span={4}>
+                ￥9.0深币/次
+              </Col>
+              <Col span={8}>
+                ￥9.0深币/次
+              </Col>
+              <Col span={4} className="fcebc014 bold">
+                ￥9.0深币
+              </Col>
+            </Row>
+          </div>
+          <div>
+            <Row className="p10 fs14 bb bgf7f9fc bbb1c9e2">
+              <Col span={24}>
+                <Checkbox className="bold">API接口名称1</Checkbox>
+              </Col>
+            </Row>
+            <Row className="ptb20 plr10 bb">
+              <Col span={4}>
+                <Checkbox >API接口名称1</Checkbox>
+              </Col>
+              <Col span={4}>
+                ￥9.0深币/次
+              </Col>
+              <Col span={4}>
+                ￥9.0深币/次
+              </Col>
+              <Col span={8}>
+                ￥9.0深币/次
+              </Col>
+              <Col span={4} className="fcebc014 bold">
+                ￥9.0深币
+              </Col>
+            </Row>
+            <Row className="ptb20 plr10">
+              <Col span={4}>
+                <Checkbox >API接口名称1</Checkbox>
+              </Col>
+              <Col span={4}>
+                ￥9.0深币/次
+              </Col>
+              <Col span={4}>
+                ￥9.0深币/次
+              </Col>
+              <Col span={8}>
+                ￥9.0深币/次
+              </Col>
+              <Col span={4} className="fcebc014 bold">
+                ￥9.0深币
+              </Col>
+            </Row>
+          </div>
         </div>
-        <div className="borderShadow mt20 cProduct fs12 fc333">
-          <Row className="p10 fs14 bb bgf7f9fc bbb1c9e2">
-            <Col span={4}>
-              <Checkbox className="fc004ea1 bold">API接口名称1</Checkbox>
-              <Icon type="close-circle" className="fc999" />
-            </Col>
-            <Col span={20} className="tr">
-              (已选<span className="fc337ac4">2</span>个API接口) <Icon type="down" className="ml20 mr10 fc337ac4" />
-            </Col>
-          </Row>
-          <Row className="ptb20 plr10 bb">
-            <Col span={4}>
-              <Checkbox >API接口名称1</Checkbox>
-            </Col>
-            <Col span={3}>
-              <Checkbox >时长</Checkbox>
-            </Col>
-            <Col span={4}>
-              <Select defaultValue="lucy">
-                <Select.Option value="jack">Jack</Select.Option>
-                <Select.Option value="lucy">近一个月</Select.Option>
-                <Select.Option value="disabled" disabled>Disabled</Select.Option>
-                <Select.Option value="Yiminghe">yiminghe</Select.Option>
-              </Select>
-            </Col>
-            <Col span={3}>
-              ￥9.0深币/次
-            </Col>
-            <Col span={5}>
-              <span className="numberHandle">
-                <strong><img src={Add} className="mr10" /></strong>
-                <Input style={{ width: 80 }} />
-                <strong><img src={Reduce} className="ml10" /></strong>
-                <span className="fc333 fs12 ml10">月</span>
-              </span>
-            </Col>
-            <Col span={3} className="fcebc014 bold">
-              ￥9.0深币
-            </Col>
-            <Col span={2}>
-              <Button>删除</Button>
-            </Col>
-          </Row>
-          <Row className="ptb20 plr10">
-            <Col span={4}>
-              <Checkbox >API接口名称1</Checkbox>
-            </Col>
-            <Col span={3}>
-              <Checkbox >时长</Checkbox>
-            </Col>
-            <Col span={4}>
-              <Select defaultValue="lucy">
-                <Select.Option value="jack">Jack</Select.Option>
-                <Select.Option value="lucy">近一个月</Select.Option>
-                <Select.Option value="disabled" disabled>Disabled</Select.Option>
-                <Select.Option value="Yiminghe">yiminghe</Select.Option>
-              </Select>
-            </Col>
-            <Col span={3}>
-              ￥9.0深币/次
-            </Col>
-            <Col span={5}>
-              <span className="numberHandle">
-                <strong><img src={Add} className="mr10" /></strong>
-                <Input style={{ width: 80 }} />
-                <strong><img src={Reduce} className="ml10" /></strong>
-                <span className="fc333 fs12 ml10">月</span>
-              </span>
-            </Col>
-            <Col span={3} className="fcebc014 bold">
-              ￥9.0深币
-            </Col>
-            <Col span={2}>
-              <Button>删除</Button>
-            </Col>
-          </Row>
-        </div>
-        <div className="borderShadow mt20 cProduct fs12 fc333">
+        <div className="borderShadow mtb20 cProduct fs12 fc333">
           <Row className="p10 fs14">
-            <Col span={12} className="bold">
-              <Checkbox className="bold" style={{width: 60}}>全选</Checkbox>
-              <span>已选商品</span>
-              <span className="ml10 fcebc014">2</span> 件
-            </Col>
-            <Col span={12} className="tr fs12">
-              合计：<span className="bold fs16 fcebc014">9999.0</span> 深币
-              <Button className="plr20 ml20">结算</Button>
+            <Col span={24} className="tr fs12">
+              合计：<span className="bold fs24 fcdb4858">9999.0</span> 深币
+              <Button className="plr20 ml20" onClick={() => this.setBuyModalVisible(true)}>购买</Button>
             </Col>
           </Row>
         </div>
 
         <Modal
-          title="提示"
+          title="余额不足提示"
           centered
+          width="400px"
+          className="tl"
+          footer={null}
           visible={this.state.isShowDelPwdModal}
-          onOk={() => this.setdelModalVisible(false)}
-          onCancel={() => this.setdelModalVisible(false)}
+          onOk={() => this.setBuyModalVisible(false)}
+          onCancel={() => this.setBuyModalVisible(false)}
         >
-          <p className="tc">确定要删除该商品吗？</p>
+          <div className="fs12 fc333">你的账户余额不足，应付168.00深币，账户余额99.00深币，请立即前往充值</div>
+          <div className="mt20 fs16">补差充值金额：<span className="fcdb4858">69.00深币</span></div>
+          <div className="mtb10"><Button>去充值</Button></div>
         </Modal>
       </div>
     );
