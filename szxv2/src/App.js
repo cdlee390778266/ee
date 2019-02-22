@@ -10,6 +10,7 @@ import Home from './components/public/home/home'
 import Apply from './components/public/apply/apply'
 import Admin from './components/admin/admin'
 import Order from './components/admin/order'
+import Product from './components/public/product/package'
 
 class App extends Component {
 
@@ -23,6 +24,7 @@ class App extends Component {
 	        <Route path="/apply" component={Apply}/>
 	        <Route path="/admin" component={Admin}/>
           <Route path="/order" component={Order} />
+          <Route path="/product" component={Product} />
       	<Foot />
       </div>
     );

@@ -2,12 +2,17 @@ import React from 'react'
 import { Input, Checkbox, Icon, Pagination, Button  } from 'antd';
 
 import logo from '../../../assets/images/logo.png';
+import banner from '../../../assets/images/banner.png';
 
 export default class SupportIndex extends React.Component {
 
   render () {
     return (
+
       <div className="company">
+        <div className="banner">
+          <img src={banner} className='banner' alt="轮播图"/>
+        </div>
         <div className="company-wrap">
             <div className="company-name">
               <div className="logo-name"><img src={logo} alt="logo"/>深圳证券信息技术有限公司</div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Input, Checkbox, Icon, Pagination, Button  } from 'antd';
+import { Link } from "react-router-dom";
 
 import logo from '../../../assets/images/logo.png';
 
@@ -94,7 +95,7 @@ export default class DataCenter extends React.Component {
             <div>
               <div className="product">
                 <div>
-                  <span className="name">股票日行情包</span>
+                  <Link to='/product/package'className="name" >股票日行情包</Link>
                   <div className="right">
                     <Icon type="like" theme="twoTone" className="like"/>
                     <span className="num">888</span>
